@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700&display=swap');
+
+
+:root{
+    /* Colors */
+    --primary-color:#49CD5E;
+    --secondary-color:#223CC7;
+    --tertiary-color:#6581A3;
+    --dark-color:#000000;
+    --grey-color:#9C9C9C;
+    --neutral-color:#E1E8ED;
+    --white:#FFFFFF;
+
+    /* Font Family */
+    --font:'Red Hat Display', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+
+html,body,#__next{
+    height:100%;
+    width: 100%;
+}
+
+body{
+    font-family: var(--font);
+    font-weight: 400px;
+    font-size:1rem;
+    line-height: 1.522rem;
+}
+
+h1, .h1, h2, .h2, h3, .h3{
+    font-weight: 700;
+}
+
+h1, .h1{
+    font-size: 1.5rem;
+    line-height: 24px;
+}
+
+h2, .h2{
+    font-size: 1.25rem;
+    line-height: 30px;
+}
+
+h3, .h3{
+    font-size: 1.125rem;
+    line-height: 27px;
+}
+
+.small, .label{
+    font-size: 0.875rem;
+    line-height: 1.332rem;
+}
+
+.tiny{
+    font-size: 0.75rem;
+    line-height: 1.141rem;
+}
+
+@media screen and (max-width:375px){
+    .mobile-hide{
+        display: none;
+    }
+}
+
+.react-datepicker{
+    font-family: var(--font) !important;
+    border: none !important;
+    padding: 24px 26px !important;
+}
+
+.react-datepicker__header{
+    background-color: white !important;
+    border-bottom: none !important;
+}
+
+.react-datepicker__day-name{
+    color: var(--grey-color) !important;
+    font-size: 14px!important;
+}
+
+.react-datepicker__week > .react-datepicker__day--keyboard-selected ~ .react-datepicker__day{
+    background-color: red!important;
+}
