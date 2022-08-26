@@ -1,0 +1,18 @@
+{
+  "presets": ["@babel/preset-env"],
+  "plugins": [
+    ["babel-plugin-module-resolver",
+      {
+        "alias": {
+          "@routes": "./src/routes",
+          "@events": "./src/event",
+          "@database": "./src/database",
+          "@services": "./src/services",
+          "@utils": "./src/utils",
+          "@validator": "./src/validator"
+        }
+      }
+    ],
+    ["@babel/plugin-proposal-class-properties"]
+  ]
+}
